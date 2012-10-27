@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Express 2012 for Web
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketShare", "MarketShare\MarketShare.csproj", "{E89F98B1-B9C9-467A-8FCF-F5E192455033}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarketShare.Tests", "MarketShare.Tests\MarketShare.Tests.csproj", "{C9B0A323-BEDC-4CF1-8073-7213873AEB99}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E89F98B1-B9C9-467A-8FCF-F5E192455033}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E89F98B1-B9C9-467A-8FCF-F5E192455033}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E89F98B1-B9C9-467A-8FCF-F5E192455033}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E89F98B1-B9C9-467A-8FCF-F5E192455033}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9B0A323-BEDC-4CF1-8073-7213873AEB99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9B0A323-BEDC-4CF1-8073-7213873AEB99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9B0A323-BEDC-4CF1-8073-7213873AEB99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9B0A323-BEDC-4CF1-8073-7213873AEB99}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

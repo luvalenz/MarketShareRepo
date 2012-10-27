@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "Página principal";
+}
+
+@model IEnumerable<MarketShare.Models.Producto>
+
+<div class="rankings_panel">
+    <div class="ranking_box">
+
+        @foreach (var item in Model)
+        {         
+                string producto = Html.DisplayFor(modelItem => item.Nombre).ToString();
+            <p>
+                @Html.ActionLink(producto, "Details", "Productos", new { id = item.ProductoID }, new { })
+            </p>
+        }
+    </div>
+
+
+    <div class="ranking_box" style="margin-left: 42px;">
+        chao
+    </div>
+</div>

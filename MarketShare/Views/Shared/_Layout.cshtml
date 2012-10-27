@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+    <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta charset="utf-8" />
+        <title>@ViewBag.Title - Mi aplicación ASP.NET MVC</title>
+        <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <meta name="viewport" content="width=device-width" />
+        @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+    </head>
+    <body>
+        <header style="background-color: #efeeef; border: solid 1px #c8c8c8; height: 60px; padding: 0px;">
+            <div class="content-wrapper" style="background-color: #efeeef; border: solid 0px red; height: 50px; padding: 0px;">
+                <div class="float-left" >
+                    <!--<p class="site-title">@Html.ActionLink("su logotipo aquí", "Index", "Home")</p>-->
+                    <div class="div_left" >
+                        <img src="../Images/logo.png" alt="loading" width="120px" height="40px"/>
+                    </div>
+                    <div class="div_left" style="margin-left:50px;">
+                        <form action="#" style="border: solid 0px #c8c8c8; padding:0px;">
+                            <div id="search-div" style="padding: 0px;">  
+                                    <input class="search-box" type="text" value="Search items.." title="Buscar" />
+                                    <button id="search-button" type="button">?</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="top_menu" class="div_left">
+                        <a href="#">
+                            Agregar Producto
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <div id="body">
+            <!--@RenderSection("featured", required: false)-->
+            <section class="content-wrapper main-content clear-fix" style="border: 0px solid black;">
+                @RenderBody()
+            </section>
+        </div>
+        <footer>
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET MVC</p>
+                </div>
+            </div>
+        </footer>
+
+        @Scripts.Render("~/bundles/jquery")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
